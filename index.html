@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore the beauty of the world</p>
+    </header>
+
+<nav class="filters">
+    <button class="filter-btn active" data-category="All">All</button>
+    <button class="filter-btn" data-category="Animal">Animal</button>
+    <button class="filter-btn" data-category="Bird">Bird</button>
+    <button class="filter-btn" data-category="Butterfly">Butterfly</button>
+    <button class="filter-btn" data-category="Flower">Flower</button>
+    <button class="filter-btn" data-category="Nature">Nature</button>
+    <button class="filter-btn" data-category="Travel">Travel</button>
+</nav>
+
+
+    <main class="gallery" id="gallery"></main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="close" id="close">&times;</button>
+        <button class="prev" id="prev">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img src="" id="lightbox-img" alt="Selected image">
+            <p id="image-title"></p>
+        </div>
+
+        <button class="next" id="next">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
